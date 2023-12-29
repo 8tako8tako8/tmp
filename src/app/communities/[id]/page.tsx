@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const CommunityPage = ({ params }: { params: { id: string } }) => {
   const community = {
@@ -14,7 +12,7 @@ const CommunityPage = ({ params }: { params: { id: string } }) => {
   return (
     <div className="max-w-3xl mx-auto p-5">
       <h1 className="text-4xl text-center mb-10 mt-10">{community.name}</h1>
-      <Image src={community.image} alt="" width={1280} height={300} />
+      {/* <Image src={community.image} alt="" width={1280} height={300} /> */}
       <div className="text-lg leading-relaxed text-justify">
         <p>
           {community.description.length > 70

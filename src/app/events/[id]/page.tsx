@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { MaterialSymbolsCalendarMonthOutlineSharpIcon } from '@/app/components/atoms/MaterialSymbolsCalendarMonthOutlineSharpIcon'
 import { MaterialSymbolsCurrencyYenIcon } from '@/app/components/atoms/MaterialSymbolsCurrencyYenIcon'
 import { MaterialSymbolsGroupsIcon } from '@/app/components/atoms/MaterialSymbolsGroupsIcon'
@@ -132,7 +130,7 @@ const EventPage = ({ params }: { params: { id: string } }) => {
       <div className="grid grid-cols-3 gap-4 mb-10">
         <div className="col-span-2 overflow-y-scroll h-screen hidden-scrollbar">
           <div>
-            <Image src={event.image} alt="" width={700} height={300} />
+            {/* <Image src={event.image} alt="" width={700} height={300} /> */}
           </div>
           <div className="text-lg leading-relaxed text-justify whitespace-pre-wrap mt-4">
             <p>{event.description}</p>
@@ -144,12 +142,12 @@ const EventPage = ({ params }: { params: { id: string } }) => {
             <div className="flex flex-wrap gap-4 mt-2">
               <div>
                 <div className="mt-2 mb-1">
-                  <Image
+                  {/* <Image
                     width={70}
                     height={70}
                     alt="profile_icon"
                     src={'/default_user_icon.png'}
-                  />
+                  /> */}
                 </div>
                 <div className="text-center">
                   <span className="text-xs">
@@ -169,12 +167,12 @@ const EventPage = ({ params }: { params: { id: string } }) => {
               {participants.map((participant) => (
                 <div key={participant.user_id}>
                   <div className="mt-1 mb-1">
-                    <Image
+                    {/* <Image
                       width={70}
                       height={70}
                       alt="profile_icon"
                       src={'/default_user_icon.png'}
-                    />
+                    /> */}
                   </div>
                   <div className="text-center">
                     <span className="text-xs">

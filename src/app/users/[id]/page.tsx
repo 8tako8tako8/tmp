@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { ProfileType } from '../../types/types'
 
 const user: ProfileType = {
@@ -35,13 +33,13 @@ const ProfilePage = () => {
     <div className="container mx-auto flex flex-col w-1/2">
       <div className="mb-6 flex flex-col items-center justify-center">
         <div>
-          <Image
+          {/* <Image
             src={'/default_user_icon.png'}
             alt="プロフィール画像"
             width={150}
             height={150}
             className="rounded-full mb-2"
-          />
+          /> */}
         </div>
         <div className="text-2xl font-bold text-center">{user.nickname}</div>
       </div>
@@ -77,12 +75,12 @@ const ProfilePage = () => {
               className="flex flex-col items-center w-28"
             >
               <div className="mt-2 mb-1">
-                <Image
+                {/* <Image
                   width={100}
                   height={100}
                   alt="profile_icon"
                   src={'/default_user_icon.png'}
-                />
+                /> */}
               </div>
               <div className="text-center text-xs">{community.name}</div>
             </div>

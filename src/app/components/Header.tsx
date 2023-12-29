@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,12 +8,12 @@ const Header = () => {
     <header className="bg-white">
       <nav className="flex items-center justify-between p-4">
         <div className="flex items-center">
-          <Image
+          {/* <Image
             src={'/comeback_basketball_icon.png'}
             alt=""
             width={50}
             height={50}
-          />
+          /> */}
           <Link
             href={'/'}
             className="text-3xl font-bold font-sans tracking-tighter text-orange-400"
@@ -31,12 +30,12 @@ const Header = () => {
           </Link>
 
           <Link href={`/users/1`}>
-            <Image
+            {/* <Image
               width={50}
               height={50}
               alt="profile_icon"
               src={'/default_user_icon.png'}
-            />
+            /> */}
           </Link>
         </div>
       </nav>
